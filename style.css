@@ -1,0 +1,248 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   font-family: Poppins; 
+}
+body{
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: rgb(81, 179, 228);
+}
+.box{
+    
+    width: 400px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.box header{
+    color: #43affc;
+font-size: 21px;    
+font-weight: 50px;
+padding: 15px 15px;
+align-items: center;
+display: flex;
+border-bottom: 1px solid rgb(193, 188, 188);
+}
+
+
+.box header{
+font-size: 30px;
+margin-left: 5px;
+
+}
+
+header i{
+display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-right: 8px;
+  }
+  .box.active header i{
+      display: block;
+    margin-left: 5px;
+    font-size: 30px;
+  }
+
+
+.box .inp{
+    
+    margin: 12px 12px 13px 13px;
+    
+}
+
+.box.active input{
+    display: none;  
+}
+.box p{
+    display: none;
+    font: 20px;
+    text-align: center;
+    border: 1px solid  rgb(193, 188, 188);;
+    padding: 12px 10px;
+    border-radius: 10px;
+
+}
+
+
+.inf.error{
+    display: block;
+color: rgb(95, 40, 40) ;
+background-color:rgb(223, 180, 180) ;
+border: 1px solid ;
+}
+
+
+.inf.pending{
+    display: block;
+    color: #0c5460;
+    background-color:#d1ecf1;
+    border: 1px solid ;
+    }
+
+
+
+
+.box :where(input,button){
+    width: 100%;
+    margin-top: 10px;
+    height: 50px;
+    border: 1px solid rgb(160, 159, 159);
+    border-radius: 7px;
+    font-size: 18px;
+}
+
+
+
+
+
+.box input{
+border: 1px solid #bfbfbf;
+text-align: center;
+}
+
+
+
+
+
+.sep{
+    height: 1px;
+    width: 100%;
+    margin-top: 25px;
+    background-color: #ccc;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+.sep::before{
+    content: "or";
+    text-align: center;
+    z-index: 5;
+    font-size: 20px;
+    background-color: #fff;
+    color: #ccc;
+}
+ 
+.box.active .sep{
+    display: none;
+}
+.box button{
+background-color:  #43affc;
+  color: #fff;
+  cursor: pointer; 
+  margin-top: 25px; 
+ 
+}
+
+.box.active button{
+    display: none;
+}
+
+
+
+.box button:hover{
+    background-color:  #5296c7;
+}
+
+
+.box .weather-part{
+
+    margin: 30px 0 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box.active .weather-part{
+display: flex;
+}
+
+
+.weather-part img{
+    max-width: 125px;
+}
+.weather-part .temp{
+    display: flex;
+    font-size: 72px;
+    font-weight: 500;
+
+}
+
+.weather-part .temp .numb{
+font-weight: 600;
+
+}
+.weather-part .deg{
+    font-size: 40px;
+    margin: 12px 5px 0 0;
+    display: block;
+}
+
+.weather-part .location{
+    font-size: 21px;
+    display: flex;
+    align-items: center;
+     margin-bottom: 30px;
+}
+
+.location i{
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+
+.weather-part .bottom{
+    border-top: 1px solid #bfbfbf;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+.bottom .column{
+    width: 100%;
+    display: flex;
+    padding: 15px 0;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid #bfbfbf;
+}
+
+.column i{
+    /* color: #43affc ; */
+    font-size: 40px;
+    padding: 10px;
+}
+
+
+
+.details .temp, .humidity span{
+  font-weight: 500;
+    font-size: 18px;
+    margin-top: -3px;
+   
+}
+
+.details .temp .deg{
+    margin: 0;
+    font-size: 17px;
+    padding: 0 2px 0 1px;
+}
+
+.details p{
+    font-size: 14px;
+    margin-top: -6px;
+}
+
+
+
+
